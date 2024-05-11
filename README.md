@@ -24,7 +24,8 @@ Close the file pointer and end the program
 Command--line-arguments-to-count-word
 Developed by: MARIO VIOFER J
 Register no: 212223100032
-fp=open("count.txt","r")
+import sys
+fp=open(sys.argv[1])
 wordcount=0
 for i in fp:
     words=i.split()
@@ -33,7 +34,7 @@ print("Total no of words in file is",wordcount)
 fp.close()
 ~~~
 ### OUTPUT:
-![image](https://github.com/Mario-Viofer-J/Command--line-arguments-to-count-word/assets/144979232/47c84327-43ca-448e-b166-ea3f034de224)
+![image](https://github.com/Mario-Viofer-J/Command--line-arguments-to-count-word/assets/144979232/3e870d16-6417-4566-98d8-6b78cbbd5463)
 
 
 
